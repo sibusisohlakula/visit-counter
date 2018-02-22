@@ -1,6 +1,6 @@
 This repository contains brief description on on how to run php scripts on ubuntu 16.04 terminal.
-It is recommeded that you have the LAMP(Linux, Apache, MySQL and PHP) package installed.http://localhost/countlog.txt
-Here is https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04.
+It is recommeded that you have the LAMP(Linux, Apache, MySQL and PHP) package installed.
+Here is link: https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04.
 Accesing your virtual Machine via SSH: $ssh |username|@|ip_address|
 The rest of the codes for counter.php and countlog.txt scripts are indicated on the respective file names on this visit-couter 
 repository.
