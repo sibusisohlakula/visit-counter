@@ -13,3 +13,5 @@ $datei = fopen("countlog.txt","w");
 fwrite($datei, $count);
 fclose($datei);
 ?>
+
+
