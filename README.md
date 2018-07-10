@@ -27,6 +27,9 @@ sudo docker images
 This is the demonstration for building a Dockerfile and running the images with/without volume mount.
 ## Description
 1)Building your own docker from Dockerfile, and 2)Mount a volume inside of a docker.
+## Task1
+git clone https://github.com/sibusisohlakula/visit-counter
+cd sibuda
 ## How to build
 ```
 docker build -t zenlab/visit-counter .
