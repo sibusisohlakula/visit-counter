@@ -13,7 +13,7 @@ $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 $ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 $ sudo apt-get update
 ```
-## Finally, install Docker making use of the following command:
+## Finally, install Docker making use of the following:
 ```
 $sudo apt-get install -y docker-c, docker should now be installed and you can check it using:
 $sudo systemctl status docker
