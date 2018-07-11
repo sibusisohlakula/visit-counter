@@ -23,7 +23,7 @@ sudo systemctl status docker
 sudo docker login
 sudo docker images
 ```
-#Docker Demonstration
+# Docker Demonstration
 This is the demonstration for building a Dockerfile and running the images with/without volume mount.
 ## Description
 1)Building your own docker from Dockerfile, and 2)Mount a volume inside of a docker.
@@ -31,14 +31,15 @@ This is the demonstration for building a Dockerfile and running the images with/
 ```
 git clone https://github.com/sibusisohlakula/visit-counter
 cd sibuda
-```
+cd visit-counter
 
-## How to build
+```
+## Building the zenlab/visit-counter
 ```
 docker build -t zenlab/visit-counter .
 ```
 # How to run
-## run with docker image built from Dockerfile (without volume mount)
+## running with docker image built from Dockerfile (without volume mount)
 ```
 docker run --rm \
   -p 80:80 \
@@ -53,6 +54,10 @@ sudo docker run --rm \
   -v "$PWD/scripts":/var/www/html \
   zenlab/visit-counter
 ```
+## Running the container
+
+sudo docker run -dti -p 80:80 --name zenlab -v "$PWD":/var/www/html php:7.0-apache
+
 # How to access
 ```
 http://localhost/counter.php
