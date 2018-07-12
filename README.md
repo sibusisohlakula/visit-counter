@@ -29,14 +29,14 @@ This is the demonstration for building a Dockerfile and running the images with/
 1)Building your own docker from Dockerfile, and 2)Mount a volume inside of a docker.
 ## Task1
 ```
+mkdir Demo
+cd Demo
 git clone https://github.com/sibusisohlakula/visit-counter
-cd sibuda
 cd visit-counter
-
 ```
-## Building the zenlab/visit-counter
+## Building the sibusiso/visit-counter
 ```
-docker build -t zenlab/visit-counter .
+docker build -t sibusiso/visit-counter .
 ```
 # How to run
 ## running with docker image built from Dockerfile (without volume mount)
@@ -44,7 +44,7 @@ docker build -t zenlab/visit-counter .
 docker run --rm \
   -p 80:80 \
   --name visit-counter \
-  zenlab/visit-counter
+  sibusiso/visit-counter
 ```
 # How to overwrite the web root with a volume at runtime
 ```
@@ -52,12 +52,12 @@ sudo docker run --rm \
   -p 80:80 \
   --name visit-counter \
   -v "$PWD/scripts":/var/www/html \
-  zenlab/visit-counter
+  sibusiso/visit-counter
 ```
 ## Running the container
-
-sudo docker run -dti -p 80:80 --name zenlab -v "$PWD":/var/www/html php:7.0-apache
-
+```
+sudo docker run -dti -p 80:80 --name sibusiso -v "$PWD":/var/www/html php:7.0-apache
+```
 # How to access
 ```
 http://localhost/counter.php
@@ -66,7 +66,7 @@ or
 ```
 http://localhost/php.info
 ```
-# Removing the running container
+## Removing the running container
 ```
 sudo docker ps
 docker rm -f |image_id|/|image_name|
