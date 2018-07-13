@@ -54,9 +54,10 @@ sudo docker run --rm \
   -v "$PWD/scripts":/var/www/html \
   sibusiso/visit-counter
 ```
-## Running the container
+## Running the Docker Container
 ```
-sudo docker run -dti -p 80:80 --name sibusiso -v "$PWD":/var/www/html php:7.0-apache
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:5
+docker run --rm   -v $(pwd)/mysqliConnection:/app   -w /app   --link some-mysql   tommylau/php php index.php
 ```
 # How to access
 ```
