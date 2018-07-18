@@ -34,6 +34,10 @@ cd Demo
 git clone https://github.com/sibusisohlakula/visit-counter
 cd visit-counter
 ```
+## Change file permissions of countlog.txt to add write access for all
+```
+chmod a+w scripts/countlog.txt
+```
 ## Building the sibusiso/visit-counter
 ```
 docker build -t sibusiso/visit-counter .
@@ -65,12 +69,12 @@ http://localhost/counter.php
 ```
 or
 ```
-http://localhost/php.info
+http://localhost/info.php
 ```
 ## Removing the running container
 ```
 sudo docker ps
-docker rm -f |image_id|/|image_name|
+docker rm -f <image_id>|<image_name>
 ```
 ## run with official php docker image (with volume mount)
 ```
