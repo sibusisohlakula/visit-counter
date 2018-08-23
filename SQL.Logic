@@ -22,7 +22,7 @@ FROM table_name;
 ```
 Selecting all the fields available in the table:
 ```
-SELECT * FROM table_name
+SELECT * FROM table_name;
 ```
 ## 3. Increment a value
 
