@@ -10,8 +10,9 @@ Then select a specific database:
 USE dataBase_name;
 ```
 Then you can start creating a table using the following format:
+```
 Create table table_name (column1 varchar(255), column2 varchar(255), column3 ...);
-
+```
 ## READING VALUE
 
 SELECT Syntax:
@@ -23,11 +24,11 @@ Selecting all the fields available in the table:
 ```
 SELECT * FROM table_name;
 ```
-## ncrement a value
+## INCREMENTING VALUE
 
 MySQL uses the AUTO_INCREMENT keyword to perform an auto-increment feature.
 
-## Updating a value/table
+## UPDATING A VALUE
 
 The UPDATE statement is used to modify the existing records in a table.
 ```
