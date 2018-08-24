@@ -1,4 +1,4 @@
-# SQL Logic For:
+# SQL LOGIC FOR:
 
 ## CREATING A TABLE
 First need to display available databases by executing the following command:
