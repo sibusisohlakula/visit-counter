@@ -1,13 +1,20 @@
 # SQL LOGIC FOR:
 
-## CREATING A TABLE
-First need to display available databases by executing the following command:
+## CREATING A TABLE AND DATABASES
+First need to check for available databases by executing the following command or create one:
 ```
 SHOW databases;
 ```
-Then select a specific database:
+Thus, if none exists you can create one.
+The CREATE DATABASE statement is used to create a new SQL database.
+Syntax:
 ```
-USE dataBase_name;
+CREATE DATABASE databasename;
+```
+
+Then select a specific database or the one you created:
+```
+USE databasename;
 ```
 Then you can start creating a table using the following format:
 ```
