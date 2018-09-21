@@ -95,6 +95,6 @@ $new_count =$row['counts'];
    }
 ?>
    ```
-# So to test the above code, I have used the following commands:```docker run --rm   -v $(pwd)/mysqliConnection:/app   -w /app   --link some-mysql   tommylau/php php index.php ```
-# And also keeping in mind that 'some-mysql' docker container name is also running: ie; ```docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:5```
+So to test the above code, I have used the following commands:```docker run --rm   -v $(pwd)/mysqliConnection:/app   -w /app   --link some-mysql   tommylau/php php index.php ```
+And also keeping in mind that 'some-mysql' docker container name is also running: ie; ```docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:5```
    
